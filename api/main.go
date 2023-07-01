@@ -4,7 +4,7 @@ import(
 	"fmt"
 	"log"
 	"os"
-	"github.com/gofiber/v2/middleware/logger"
+	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
 )
