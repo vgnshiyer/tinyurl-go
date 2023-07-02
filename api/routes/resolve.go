@@ -13,13 +13,13 @@ func ResolveURL(c *fiber.Ctx) error {
 	defer r.Close()
 
 	value, err := r.Get(database.Ctx, url).Result()
-	if err == redis.nil {
+	if err == redis.Nil {
 		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{
-			"error":"tinyurl not found in the database"
+			"error":"tinyurl not found in the database",
 		})
 	} else if err != nil {
-		return c.Status(fiber.StatusInternalError).JSON(fiber.Map {
-			"error": "DB connection error"
+		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map {
+			"error": "DB connection error",
 		})
 	}
 
