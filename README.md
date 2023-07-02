@@ -1,6 +1,11 @@
 # tinyurl-go
 An Educational project: A Tiny URL service implementation in golang.
 
+**Tools Used:**
+- go-fiber
+- redis
+- docker, docker-compose
+
 ## API Documentation
 
 #### Endpoints
