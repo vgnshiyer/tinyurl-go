@@ -6,13 +6,16 @@ An Educational project: A Tiny URL service implementation in golang.
 #### Endpoints
 
 - /api/v1
+
 **Method:** POST
+
 **Sample Body:**
 ```
 {
   "url": "https://www.google.com/asd2352f"
 }
 ```
+
 **Sample Response:**
 ```
 {
@@ -24,6 +27,8 @@ An Educational project: A Tiny URL service implementation in golang.
 }
 ```
 
-- /<id>
+- /`id`
+
 **Method:** GET
+
 **Response:** Redirects to actual url
